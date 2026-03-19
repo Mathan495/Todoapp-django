@@ -62,20 +62,10 @@ Todoapp-django/
 └── README.md
 ```
 
-## Requirements
-- Python 3.x
-- Django 3.x or later
-
-## Contribution Guidelines
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-3. Make your changes and push to the branch:
-   ```bash
-   git push origin feature/your-feature
-   ```
-4. Open a pull request to the main branch with a clear description of your changes.
-
-Happy Coding!
+## TechStack
+- Python 3.14.3
+- Django 6.0.3
+- SQLite Database
+- Bootstrap
+- CSS
+- HTML5
