@@ -68,14 +68,14 @@ def login_view(request):
     return render(request, 'login.html', {})
 
 @login_required
-def Deletetask(request, name):
-    get_todo = todo.objects.get(user=request.user, todo_name=name)
+def Deletetask(request, id):
+    get_todo = todo.objects.get(user=request.user, id=id)
     get_todo.delete()
     return redirect('homepage')
 
 @login_required
-def Update(request, name):
-    get_todo = todo.objects.get(user=request.user, todo_name=name)
+def Update(request, id):
+    get_todo = todo.objects.get(user=request.user, id=id)
     get_todo.status = True
     get_todo.save()
     return redirect('homepage')
